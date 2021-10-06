@@ -1,4 +1,5 @@
 import React from "react";
+import "./Business.css";
 
 const business = {
   imageSrc: "https://i.ytimg.com/vi/qh9yn9vGNzg/maxresdefault.jpg",
