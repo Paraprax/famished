@@ -9,7 +9,6 @@ const optionsForSortBy = {
 };
 
 //search bar component:
-
 class SearchBar extends React.Component {
   renderSortOptions() {
     Object.keys(optionsForSortBy).map((option) => {
