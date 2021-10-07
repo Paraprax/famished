@@ -17,4 +17,21 @@ class SearchBar extends React.Component {
       return <li key={optionValue}>{option}</li>;
     });
   }
+
+  render() {
+    return (
+      <div className="SearchBar">
+        <div className="SearchBar-sort-options">
+          <ul>{this.renderSortOptions}</ul>
+        </div>
+        <div className="SearchBar-fields">
+          <input placeholder="Search Restaurants" />
+          <input placeholder="Where?" />
+        </div>
+        <div className="SearchBar-submit">
+          <a>What's good?</a>
+        </div>
+      </div>
+    );
+  }
 }
