@@ -1,5 +1,4 @@
 /* Universal Styles */
-
 html {
   font-size: 18px;
 }
@@ -15,7 +14,6 @@ input:focus {
 }
 
 /* Reusable Component - Image Container */
-
 .image-container {
   display: flex;
   flex-direction: column;
@@ -29,7 +27,6 @@ input:focus {
 }
 
 /* App Styles */
-
 .App {
   font-family: "Work Sans", sans-serif;
 }
@@ -38,7 +35,7 @@ h1 {
   padding: 0.66rem 0;
   text-align: center;
   background-color: #cca353;
-  font-family: Poppins, sans-serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-size: 1.8rem;
   color: #fff;
 }
