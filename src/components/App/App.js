@@ -4,8 +4,16 @@ import "./App.css";
 import BusinessList from "../BusinessList/BusinessList";
 import SearchBar from "../SearchBar/SearchBar";
 
-const App = () => {
-  return;
-};
+class App extends React.Component {
+  render() {
+    return (
+      <div className="App">
+        <h1>Famished</h1>
+        <SearchBar />
+        <BusinessList />
+      </div>
+    );
+  }
+}
 
 export default App;
