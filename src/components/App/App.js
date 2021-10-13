@@ -19,12 +19,11 @@ const businessesArray = [business, business, business, business, business, busin
 
 class App extends React.Component {
   render() {
-    const businesses = { businessesArray };
     return (
       <div className="App">
         <h1>Famished</h1>
         <SearchBar />
-        <BusinessList />
+        <BusinessList businesses={businessesArray} />
       </div>
     );
   }
