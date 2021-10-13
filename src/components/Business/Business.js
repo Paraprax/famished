@@ -6,19 +6,19 @@ class Business extends React.Component {
     return (
       <div className="Business">
         <div className="image-container">
-          <img src={this.props.business.imageSrc} alt="Spider-Man holding a pizza" />
+          <img src={this.props.bizName.imageSrc} alt="Spider-Man holding a pizza" />
         </div>
-        <h2>{this.props.business.name}</h2>
+        <h2>{this.props.bizName.name}</h2>
         <div className="Business-information">
           <div className="Business-address">
-            <p>{this.props.business.address}</p>
-            <p>{this.props.business.city}</p>
-            <p>{this.props.business.state + this.props.business.zipCode}</p>
+            <p>{this.props.bizName.address}</p>
+            <p>{this.props.bizName.city}</p>
+            <p>{this.props.bizName.state + this.props.bizName.zipCode}</p>
           </div>
           <div className="Business-reviews">
-            <h3>{this.props.business.category}</h3>
-            <h3 className="rating">{this.props.business.rating}</h3>
-            <p>{this.props.business.reviewCount}</p>
+            <h3>{this.props.bizName.category}</h3>
+            <h3 className="rating">{this.props.bizName.rating}</h3>
+            <p>{this.props.bizName.reviewCount}</p>
           </div>
         </div>
       </div>
