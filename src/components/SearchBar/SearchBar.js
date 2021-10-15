@@ -10,6 +10,9 @@ class SearchBar extends React.Component {
       location: "",
       sortBy: "best_match",
     };
+    //'this' bindings:
+    this.handleTermChange = this.handleTermChange.bind(this);
+    this.handleLocationChange = this.handleLocationChange.bind(this);
     //query strings for sort_by endpoint of the Yelp API:
     this.optionsForSortBy = {
       "Best Match": "best_match",
@@ -30,9 +33,17 @@ class SearchBar extends React.Component {
     this.setState({ sortBy: sortOption });
   }
 
-  handleTermChange(event) {}
+  handleTermChange(event) {
+    this.setState = {
+      term: event.target.value,
+    };
+  }
 
-  handleLocationChange(event) {}
+  handleLocationChange(event) {
+    this.setState = {
+      location: event.target.value,
+    };
+  }
 
   renderSortOptions() {
     return Object.keys(this.optionsForSortBy).map((option) => {
