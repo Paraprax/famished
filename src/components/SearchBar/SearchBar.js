@@ -1,13 +1,6 @@
 import React from "react";
 import "./SearchBar.css";
 
-//query strings for sort_by endpoint of the Yelp API:
-const optionsForSortBy = {
-  "Best Match": "best_match",
-  "Highest Rated": "rating",
-  "Most Reviews": "review_count",
-};
-
 //search bar component:
 class SearchBar extends React.Component {
   constructor(props) {
@@ -17,11 +10,17 @@ class SearchBar extends React.Component {
       location: "",
       sortBy: "best_match",
     };
+    //query strings for sort_by endpoint of the Yelp API:
+    this.optionsForSortBy = {
+      "Best Match": "best_match",
+      "Highest Rated": "rating",
+      "Most Reviews": "review_count",
+    };
   }
 
   renderSortOptions() {
-    return Object.keys(optionsForSortBy).map((option) => {
-      let optionValue = optionsForSortBy[option];
+    return Object.keys(this.optionsForSortBy).map((option) => {
+      let optionValue = this.optionsForSortBy[option];
       return <li key={optionValue}>{option}</li>;
     });
   }
