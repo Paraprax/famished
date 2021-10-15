@@ -18,6 +18,10 @@ const business = {
 const businessesArray = [business, business, business, business, business, business];
 
 class App extends React.Component {
+  searchYelp(term, location, sortBy) {
+    console.log(`Hitting Yelp API with - ${term}, ${location}, ${sortBy}`);
+  }
+
   render() {
     return (
       <div className="App">
