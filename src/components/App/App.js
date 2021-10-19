@@ -12,7 +12,11 @@ class App extends React.Component {
   }
   searchYelp(term, location, sortBy) {
     console.log(`Hitting Yelp API with - ${term}, ${location}, ${sortBy}`);
-    Yelp.search(term, location, sortBy);
+    Yelp.search(term, location, sortBy).then((businesses) => {
+      this.setState({
+        businesses: businesses,
+      });
+    });
   }
 
   render() {
