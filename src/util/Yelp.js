@@ -10,6 +10,8 @@ const Yelp = {
         Authorization: `Bearer: ${yelpKey}`,
       },
     };
-    return fetch(yelpUrl);
+    return fetch(yelpUrl, headersObject).then((response) => {
+      return response.json();
+    });
   },
 };
