@@ -2,6 +2,7 @@ import React from "react";
 import "./App.css";
 import BusinessList from "../BusinessList/BusinessList";
 import SearchBar from "../SearchBar/SearchBar";
+import { Yelp } from "../../util/Yelp";
 
 const business = {
   imageSrc: "https://i.ytimg.com/vi/qh9yn9vGNzg/maxresdefault.jpg",
