@@ -11,7 +11,8 @@ class App extends React.Component {
     this.searchYelp().bind(this);
   }
   searchYelp(term, location, sortBy) {
-    console.log(`Hitting Yelp API with - ${term}, ${location}, ${sortBy}`);
+    //console.log(`Hitting Yelp API with - ${term}, ${location}, ${sortBy}`);
+    Yelp.search(term, location, sortBy);
   }
 
   render() {
