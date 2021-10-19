@@ -1,13 +1,13 @@
 import { yelpKey } from "./yelpkey";
 const yelpApiKey = yelpKey;
 
-const Yelp = {
+export const Yelp = {
   search(term, location, sortBy) {
     const CORSanywhere = "https://cors-anywhere.herokuapp.com/";
     const yelpUrl = `${CORSanywhere}https://api.yelp.com/v3/businesses/search?term=${term}&location=${location}&sort_by=${sortBy}`;
     const headersObject = {
       headers: {
-        Authorization: `Bearer: ${yelpKey}`,
+        Authorization: `Bearer: ${yelpApiKey}`,
       },
     };
     return fetch(yelpUrl, headersObject)
@@ -20,6 +20,7 @@ const Yelp = {
           console.log("Yelp module triggered");
           const restaurants = jsonResponse.businesses.map((restaurant) => {
             return {
+              //values as per keys in Yelp's business endpoint documentation @: yelp.com/developers/documentation/v3/business
               id: restaurant.id,
               imageSrc: restaurant.image_url,
               name: restaurant.name,
@@ -30,10 +31,10 @@ const Yelp = {
               category: restaurant.categories[0].title,
               rating: restaurant.rating,
               reviewCount: restaurant.review_count,
-            }; //return object
-          }); //restaurants callback
+            };
+          });
           return restaurants;
-        } //if-statement
-      }); //then callback
-  }, //search object
-}; //yelp object
+        }
+      });
+  },
+};
