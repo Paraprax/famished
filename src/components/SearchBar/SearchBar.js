@@ -64,8 +64,8 @@ class SearchBar extends React.Component {
           <ul>{this.renderSortOptions()}</ul>
         </div>
         <div className="SearchBar-fields">
-          <input onChange={this.handleTermChange} placeholder="Search Restaurants" />
-          <input onChange={this.handleLocationChange} placeholder="Where?" />
+          <input onChange={this.handleTermChange} placeholder="Enter food genres (eg. gourmet, take-out, Japanese, pizza..)" />
+          <input onChange={this.handleLocationChange} placeholder="Which city?" />
         </div>
         <div className="SearchBar-submit">
           <a onClick={this.handleSearchButton}>Search</a>
