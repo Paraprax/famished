@@ -2,10 +2,10 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-image: url("../../../src/assets/images/hobbit-feast-desktop.jpg");
+  background-image: url("../../../src/assets/images/spoons-hd-crop.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 25rem;
+  height: 24rem;
 }
 
 .SearchBar-sort-options ul {
@@ -81,7 +81,7 @@
 
 @media only screen and (max-width: 560px) {
   .SearchBar {
-    background-image: url("../../../src/assets/images/hobbit-feast-mobile.jpg");
+    background-image: url("../../../src/assets/images/spoons-hd-mobile.jpg");
   }
 
   .SearchBar-sort-options ul {
