@@ -7,7 +7,7 @@ export const Yelp = {
     const yelpUrl = `${CORSanywhere}https://api.yelp.com/v3/businesses/search?term=${term}&location=${location}&sort_by=${sortBy}`;
     const headerObject = {
       headers: {
-        Authorization: `Bearer: ${yelpApiKey}`,
+        Authorization: `Bearer ${yelpApiKey}`,
       },
     };
     return fetch(yelpUrl, headerObject)
