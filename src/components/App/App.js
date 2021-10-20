@@ -8,7 +8,7 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = { businesses: [] };
-    this.searchYelp().bind(this);
+    this.searchYelp.bind(this);
   }
   searchYelp(term, location, sortBy) {
     console.log(`Hitting Yelp API with - ${term}, ${location}, ${sortBy}`);
@@ -24,7 +24,7 @@ class App extends React.Component {
       <div className="App">
         <h1>Famished</h1>
         <SearchBar searchYelp={this.searchYelp} />
-        <BusinessList />
+        <BusinessList businesses={this.businesses} />
       </div>
     );
   }
