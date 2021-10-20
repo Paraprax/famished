@@ -9,6 +9,10 @@
 .Business .image-container {
   height: 16.66rem;
   margin-bottom: 1rem;
+  border-style: solid;
+  border-width: 3px;
+  border-color: rgb(240, 195, 113);
+  border-radius: 50%;
 }
 
 .Business h2 {
