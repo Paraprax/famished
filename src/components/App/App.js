@@ -23,7 +23,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <div id="header-bar">
-          <span id="famished">
+          <span id="famished" onClick={(event) => (document.location = "/")}>
             Famished
           </span>
           <span id="tagline">find the feast you're looking for</span>
