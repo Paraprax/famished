@@ -1,9 +1,9 @@
-import { yelpKey } from "./yelpkey";
-const yelpApiKey = yelpKey;
+import { yelpKey } from "./yelpkey"; //this file is git-ignored!
+const yelpApiKey = yelpKey; //replace this value with your Yelp API key from https://www.yelp.ca/developers/documentation/v3/get_started
 
 export const Yelp = {
   search(term, location, sortBy) {
-    const CORSanywhere = "https://cors-anywhere.herokuapp.com/";
+    const CORSanywhere = "https://cors-anywhere.herokuapp.com/"; //request temporary access to CORS anywhere demo @ https://cors-anywhere.herokuapp.com/corsdemo
     const yelpUrl = `${CORSanywhere}https://api.yelp.com/v3/businesses/search?term=${term}&location=${location}&sort_by=${sortBy}`;
     const headerObject = {
       headers: {
