@@ -31,11 +31,21 @@ input:focus {
   font-family: "Work Sans", sans-serif;
 }
 
-h1 {
-  padding: 0.66rem 1rem;
-  text-align: center;
+#header-bar {
   background-color: #3bb65e;
+  color: #fff;
+  padding: 0.66rem 2rem;
+}
+
+#famished {
+  text-align: left;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-size: 2.2rem;
-  color: #fff;
+}
+
+#tagline {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  padding: 4.4rem;
+  letter-spacing: 0.4rem;
 }

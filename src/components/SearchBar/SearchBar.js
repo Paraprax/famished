@@ -16,7 +16,7 @@ class SearchBar extends React.Component {
     this.handleSearchButton = this.handleSearchButton.bind(this);
     //query strings for sort_by endpoint of the Yelp API:
     this.optionsForSortBy = {
-      "Best Match": "best_match",
+      "Most Relevant": "best_match",
       "Highest Rated": "rating",
       "Most Reviews": "review_count",
     };

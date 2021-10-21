@@ -22,7 +22,9 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <h1>Famished</h1>
+        <div id="header-bar">
+          <span id="famished">Famished</span><span id='tagline'>find the feast you're looking for</span>
+        </div>
         <SearchBar searchYelp={this.searchYelp} />
         <BusinessList businesses={this.state.businesses} />
       </div>
