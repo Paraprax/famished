@@ -18,7 +18,7 @@
 .SearchBar-sort-options li {
   cursor: pointer;
   width: 4.33rem;
-  border-bottom: 1px solid #fff;
+  /* border-bottom: 1px solid #fff; */
   padding: 0 2.58rem 0.33rem 2.58rem;
   line-height: 1.13;
   text-align: left;
@@ -29,7 +29,7 @@
 }
 
 .SearchBar-sort-options li:hover {
-  border-bottom: 1px solid #32a352;
+  /* border-bottom: 1px solid #32a352; */
   color: #3cbd60;
 }
 
@@ -77,6 +77,7 @@
 
 .SearchBar-submit button:hover {
   cursor: pointer;
+  -webkit-transform: scale(1.1);
   background-color: #27da86;
 }
 
@@ -99,4 +100,8 @@
     margin-right: 0;
     margin-bottom: 0.86rem;
   }
+}
+
+li:hover {
+  -webkit-transform: scale(1.2);
 }
