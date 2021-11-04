@@ -19,7 +19,7 @@ input:focus {
   flex-direction: column;
   justify-content: center;
   overflow: hidden;
-  background: #000;
+  background: #33302e;
 }
 
 .image-container img {
