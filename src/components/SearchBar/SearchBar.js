@@ -14,11 +14,12 @@ class SearchBar extends React.Component {
     this.handleTermChange = this.handleTermChange.bind(this);
     this.handleLocationChange = this.handleLocationChange.bind(this);
     this.handleSearchButton = this.handleSearchButton.bind(this);
+    this.handleEnter = this.handleEnter.bind(this);
     //query strings for sort_by endpoint of the Yelp API:
     this.optionsForSortBy = {
-      "Most Relevant": "best_match",
-      "Highest Rated": "rating",
-      "Most Reviews": "review_count",
+      "By Relevance": "best_match",
+      "By Rating": "rating",
+      "By Reviews": "review_count",
     };
   }
 
@@ -44,7 +45,18 @@ class SearchBar extends React.Component {
   handleSearchButton(event) {
     event.preventDefault();
     if (this.state.term && this.state.location && this.state.sortBy) {
+      console.log("Search running");
       this.props.searchYelp(this.state.term, this.state.location, this.state.sortBy);
+    } else {
+      console.log("Search terms required");
+    }
+  }
+
+  handleEnter(event) {
+    if (event && event.key === "Enter") {
+      event.preventDefault();
+      console.log("Enter pressed");
+      this.handleSearchButton(event);
     }
   }
 
@@ -66,8 +78,8 @@ class SearchBar extends React.Component {
           <ul>{this.renderSortOptions()}</ul>
         </div>
         <div className="SearchBar-fields">
-          <input onChange={this.handleTermChange} placeholder="Enter food genres (eg. gourmet, take-out, Japanese, pizza..)" />
-          <input onChange={this.handleLocationChange} placeholder="Which city?" />
+          <input onChange={this.handleTermChange} placeholder="Enter food genres (eg. pizza, take-out, Japanese, gourmet..)" />
+          <input onChange={this.handleLocationChange} onKeyPress={this.handleEnter} placeholder="Which city?" />
         </div>
         <div className="SearchBar-submit">
           <button onClick={this.handleSearchButton}>Search</button>
