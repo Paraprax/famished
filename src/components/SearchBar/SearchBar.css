@@ -2,6 +2,9 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  border-bottom: 3px;
+  border-style: solid;
+  border-bottom-color: #3b744b;
   background-image: url("../../../src/assets/images/spoons-hd-fade.png");
   background-size: cover;
   background-repeat: no-repeat;
