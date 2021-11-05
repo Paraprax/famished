@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/famished/static/css/main.234e2fe8.chunk.css",
+    "main.js": "/famished/static/js/main.27c39614.chunk.js",
+    "main.js.map": "/famished/static/js/main.27c39614.chunk.js.map",
+    "runtime-main.js": "/famished/static/js/runtime-main.1132c872.js",
+    "runtime-main.js.map": "/famished/static/js/runtime-main.1132c872.js.map",
+    "static/js/2.88d82773.chunk.js": "/famished/static/js/2.88d82773.chunk.js",
+    "static/js/2.88d82773.chunk.js.map": "/famished/static/js/2.88d82773.chunk.js.map",
+    "static/js/3.a6d32f05.chunk.js": "/famished/static/js/3.a6d32f05.chunk.js",
+    "static/js/3.a6d32f05.chunk.js.map": "/famished/static/js/3.a6d32f05.chunk.js.map",
+    "index.html": "/famished/index.html",
+    "static/css/main.234e2fe8.chunk.css.map": "/famished/static/css/main.234e2fe8.chunk.css.map",
+    "static/js/2.88d82773.chunk.js.LICENSE.txt": "/famished/static/js/2.88d82773.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/famished/static/media/famished-wood-background.aa1250e8.jpg",
+    "static/media/SearchBar.css": "/famished/static/media/spoons-hd-mobile.b48f725f.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1132c872.js",
+    "static/js/2.88d82773.chunk.js",
+    "static/css/main.234e2fe8.chunk.css",
+    "static/js/main.27c39614.chunk.js"
+  ]
+}
