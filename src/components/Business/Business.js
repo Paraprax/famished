@@ -11,7 +11,7 @@ class Business extends React.Component {
           </a>
         </div>
         <a href={this.props.googleURL} target="blank">
-          <h2>{this.props.business.name}</h2>
+          <h2 className="Business-name">{this.props.business.name}</h2>
         </a>
         <div className="Business-information">
           <div className="Business-address">
