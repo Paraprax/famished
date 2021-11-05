@@ -1,4 +1,4 @@
-import { yelpKey } from "./yelpkey"; //this file is git-ignored!
+import { yelpKey } from "./yelpKeyRef"; //this file is git-ignored!
 const yelpApiKey = yelpKey; //replace this value with your Yelp API key from https://www.yelp.ca/developers/documentation/v3/get_started
 
 export const Yelp = {
