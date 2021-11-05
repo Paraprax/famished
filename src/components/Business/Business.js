@@ -13,7 +13,9 @@ class Business extends React.Component {
         <h2>{this.props.business.name}</h2>
         <div className="Business-information">
           <div className="Business-address">
-            <p>{this.props.business.address}</p>
+            <a href={this.props.googleURL} target="blank">
+              <p>{this.props.business.address}</p>
+            </a>
             <p>{this.props.business.city}</p>
             <p>{this.props.business.state + this.props.business.zipCode}</p>
           </div>
