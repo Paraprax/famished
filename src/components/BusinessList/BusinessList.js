@@ -7,7 +7,7 @@ class BusinessList extends React.Component {
     return (
       <div className="BusinessList">
         {this.props.businesses.map((business) => {
-          return <Business key={business.id} business={business} googleURL={`https://www.google.com/maps/search/?api=1&query=${business.name}+${business.city}`} />;
+          return <Business key={business.id} business={business} googleURL={`https://www.google.com/maps/search/?api=1&query=${business.name}+${business.city}`} addressURL={`https://www.google.com/maps/search/?api=1&query=${business.address}`} />;
         })}
       </div>
     );
