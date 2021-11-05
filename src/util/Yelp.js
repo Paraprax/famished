@@ -3,7 +3,7 @@ const yelpApiKey = yelpKey; //replace this value with your Yelp API key from htt
 
 export const Yelp = {
   search(term, location, sortBy) {
-    const CORSanywhere = "https://cors-anywhere.herokuapp.com/"; //request temporary access to CORS anywhere demo @ https://cors-anywhere.herokuapp.com/corsdemo
+    const CORSanywhere = "https://corsanywhere.herokuapp.com/"; //request temporary access to CORS anywhere demo @ https://cors-anywhere.herokuapp.com/corsdemo
     const yelpUrl = `${CORSanywhere}https://api.yelp.com/v3/businesses/search?term=${term}&location=${location}&sort_by=${sortBy}`;
     const headerObject = {
       headers: {
