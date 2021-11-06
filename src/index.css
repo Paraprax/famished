@@ -11,3 +11,10 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
+
+#footer {
+  color: rgba(0, 118, 82, 0.5);
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  line-height: 0rem;
+  text-align: center;
+}
