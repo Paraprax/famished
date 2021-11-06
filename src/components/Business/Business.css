@@ -4,11 +4,12 @@
   justify-content: space-between;
   width: 16rem;
   margin: 0 0.5rem 2.3rem 0.5rem;
+  /* line-height: 0rem; */
 }
 
 .Business .image-container {
   height: 16rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   border-style: solid;
   border-width: 3px;
   border-color: #f0e8e2;
@@ -16,7 +17,7 @@
 }
 
 .Business .image-container:hover {
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   border-color: #61cf70;
   border-radius: 50%;
 }
@@ -30,12 +31,13 @@
 .Business-information {
   display: flex;
   justify-content: space-between;
+  padding: 0px;
 }
 
 .Business-information p {
   font-size: 0.88rem;
   font-weight: 300;
-  line-height: 1rem;
+  line-height: 0rem;
 }
 
 .Business-address {
@@ -46,6 +48,7 @@
 
 .Business-reviews {
   color: #61cf70;
+  line-height: 0rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -58,7 +61,7 @@
 
 .Business-reviews .rating {
   font-size: 0.88rem;
-  line-height: 1rem;
+  line-height: 0rem;
 }
 
 a .Business-name:visited {
